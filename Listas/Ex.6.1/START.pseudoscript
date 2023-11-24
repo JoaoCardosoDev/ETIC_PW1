@@ -1,0 +1,26 @@
+funcao bubble(lista):
+    n = lista.tamanho()
+
+    por cada i em n:       
+        por cada numero de 0 a n-i-1:
+            se lista[numero] > lista[numero+1]:
+                x = lista[numero]
+                lista[numero] = lista[numero+1]
+                lista[numero+1] = lista[numero]
+    retorna lista
+
+funcao array(x, y)
+    x = []
+    counter = 0
+    enquanto counter < y:
+        entrada ("Indique número a adicionar: ", a)
+        x.adicionar(a)
+        counter++
+    retorna x[]
+
+entrada ("Indique o nome da lista: ", x)
+entrada ("Indique o número de items na lista: ", y)
+
+imprime(bubble(array(x,y)))
+
+ 

@@ -1,0 +1,28 @@
+#Declare uma matriz 3x3.
+
+x = [y[],b[],a[]]
+
+--------------------------
+
+funcao matriz(x, y)
+    x = []
+    counter = 0
+    De 1 a y:  #In a range
+        array()
+    retorna x[]
+        
+
+funcao array()
+    entrada("Indique o nome do array: ", a)
+    entrada("Indique o número de items na lista: ", y)
+    a = []
+    counter = 0
+    enquanto counter < y:
+        entrada ("Indique número a adicionar: ", x)
+        a.adicionar(x)
+        counter++
+    retorna a[]
+
+entrada ("Indique o nome da matriz: ", x)
+entrada ("Indique o número de colunas na matriz", y)
+matriz(x,y)

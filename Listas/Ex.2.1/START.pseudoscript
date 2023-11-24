@@ -1,0 +1,11 @@
+#Inicialize um array com os números de 1 a 10.
+
+funcao escadinha()
+    array = [0 a 9]
+    counter = 0
+    enquanto counter < 10:
+        array[counter] = array[counter] + 1
+        counter++
+
+
+escadinha()

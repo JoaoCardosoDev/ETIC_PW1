@@ -1,0 +1,14 @@
+
+
+funcao adicionar(lista)
+    lista = []
+    range de 1 a 5:
+        entrada ("Indique um número: ", a)
+        lista.adicionar(a)
+    imprime(lista)
+
+entrada ("Indique o nome da lista: ", lista)
+
+
+adicionar(lista)
+

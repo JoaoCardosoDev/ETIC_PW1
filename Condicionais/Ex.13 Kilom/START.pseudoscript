@@ -1,0 +1,8 @@
+funcao calculo(a)
+    b = a * 1.5 
+
+    imprime("O valor do transporte é {b}")
+
+entrada ("Por favor indique a distância a percorrer em KM: ", a)
+
+calculo(a)

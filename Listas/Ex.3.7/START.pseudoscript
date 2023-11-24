@@ -1,0 +1,12 @@
+#Encontre a média dos valores em um array.
+
+funcao media(lista):
+    x = 0
+    por cada i em lista[i]:
+        x = x + lista[i]
+    y = tamanho(lista)
+    retorne x / y
+
+entrada("Indique a lista para calcular a média: ", lista)
+
+imprime("A média é {media(lista)}")

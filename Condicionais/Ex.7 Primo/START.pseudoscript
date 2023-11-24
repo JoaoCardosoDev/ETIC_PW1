@@ -1,0 +1,16 @@
+
+funcao calculocerto(a):
+
+    counter = 0
+    cada i em [2..a]:
+        se a % i = 0:
+            counter = counter +1 
+
+    retorna calculocerto == 1
+
+entrada ("Por favor indique o número:", a)
+
+se calculocerto(a):
+    imprime ("Primo")
+senao:
+    imprime("N.Primo")

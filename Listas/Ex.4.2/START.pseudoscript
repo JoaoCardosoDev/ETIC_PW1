@@ -1,0 +1,14 @@
+#Ordene os elementos de um array em ordem crescente.
+
+funcao ordenar(lista)
+    por cada i em lista[i]
+        por cada i em lista[i]
+            se lista[i] < lista[i + 1]:
+                x = lista [i]
+                lista [i] = lista [i+1]
+                lista [i+1] = x
+
+
+lista = [1, 2, 3, 4, 5]
+
+ordenar(lista)

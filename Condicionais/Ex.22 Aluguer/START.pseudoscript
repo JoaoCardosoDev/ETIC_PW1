@@ -1,0 +1,9 @@
+funcao calculo (a, b)
+    c = (a * 50) + (b * 0.2)
+    retorne ("O valor do aluguer é {c}€", c)
+
+entrada ("Indique o número de dias que teve o carro: ", a)
+
+entrada ("Indique o número de kilometros feitos: ", b)
+
+calculo(a,b)

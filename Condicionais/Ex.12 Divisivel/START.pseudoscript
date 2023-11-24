@@ -1,0 +1,9 @@
+funcao calculo(a)
+    se [a % 3 = 0] e [a % 5 = 0]:
+        retorne "Sucesso"
+    senao:
+        retorne "Não é divisivel"
+
+entrada ("Por favor indique o valor: ", a)
+
+calculo(a)

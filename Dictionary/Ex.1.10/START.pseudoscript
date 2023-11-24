@@ -1,0 +1,29 @@
+#Dicionário de Sinónimos: Criar um programa que forneça sinónimos para palavras
+fornecidas pelo utilizador. Nota: O aluno deve criar um dicionário de sinónimos.
+
+
+a = 0
+sinonimos = ()
+enquanto a =! 'q':
+
+    imprimir("Bem vindo ao dicionario de sinonimos")
+    entrada("Para introduzir sinonimos introduza 1, para pesquisar o dicionario introduza 2, q para sair: ", a)
+
+    se a == 1:
+
+        entrada("Indique a palavra a introduzir: ", b)
+
+        c = 0
+        enquanto c =! nulo:
+            entrada ("Introduza sinónimo: ", c)
+            sinonimos.b.adicionar(c)
+
+    se a == 2:
+        entrada("Indique a palavra a procurar no dicionario: ", x)
+        se x está em sinonimos.chaves:
+            imprime(sinonimos.x)
+        senao:
+            imprime("Not found 404")
+
+
+

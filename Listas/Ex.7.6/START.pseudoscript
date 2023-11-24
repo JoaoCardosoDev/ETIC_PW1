@@ -1,0 +1,19 @@
+#40. 'Parta/Quebre/Divida' uma string num array de palavras.
+
+funcao breakerofwords(string)
+    palavras = []
+    holder = []
+    para cada i em string[i]:
+        se string[i] == " ":
+            palavras.adicionar(holder)
+            holder = null
+        senao:
+            holder.adicionar(string[i])
+    se holder =! null:
+        palavras.adicionar(holder)
+
+    retorna palavras
+
+entrada("Indique uma frase para ser partida: ", frase)
+
+imprime(breakerofwords(frase))

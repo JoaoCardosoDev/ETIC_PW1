@@ -1,0 +1,16 @@
+
+funcao media(a,b,c)
+    se [(a+b+c)/3] >= 7:
+        imprime ("Aprovado")
+    senão:
+        imprime ("Reprovado")
+
+imprime("Por favor indique 3 notas para ser calculada a média")
+
+entrada("Primeira nota: ", a)
+
+entrada("Segunda nota: ", b)
+
+entrada("Terceira nota: ", c)
+
+media(a,b,c)

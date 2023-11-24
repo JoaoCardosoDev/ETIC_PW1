@@ -1,0 +1,11 @@
+funcao multiplo(a)
+    se [a % 5  = 0] e [a % 1 = 0]
+        imprime ("É multiplo")
+    senao:
+        imprime ("Não é multiplo")
+
+imprime("Programa para múltiplos do #5")
+
+entrada("Apresente o valor: ", a)
+
+multiplo(a)

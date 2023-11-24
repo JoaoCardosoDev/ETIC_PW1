@@ -1,0 +1,29 @@
+#Remova elementos duplicados de um array.
+
+funcao remover(lista, lista[counter]) #Passagem da lista para uma lista nova passando à frente caso seja o elemento a eliminar
+    por cada i em lista[i]:
+        se i == counter:
+            lista[i] = lista[i+1]
+            i = i + 1 
+        senao:
+            lista[i] = lista[i]
+    retorne lista
+
+
+
+funcao duplicado(lista)
+    x = tamanho(lista)
+    counter = 0
+    por cada i em lista[i]:
+        enquanto counter < x:
+            se lista[i] == lista[counter]
+                remover(lista, lista[counter])
+                counter = counter + 1
+            senao:
+                counter = counter + 1
+        counter = 0
+
+duplicado(lista)
+
+
+

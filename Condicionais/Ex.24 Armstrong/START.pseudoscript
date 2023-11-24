@@ -1,0 +1,15 @@
+funcao determinar(a):
+
+    soma = 0
+    para cada i em a[i]: #Para cada número na lista de caracteres elevar à potencia do tamanho
+        soma = soma + a[i]^tamanho(a)
+
+   
+    se soma == a:
+        retorne "É um número Armstrong"
+    senao:
+        retorne "Não é um número Armstrong"
+
+entrada ("Por favor indique o ano: ", a)
+
+imprime(determinar(a))

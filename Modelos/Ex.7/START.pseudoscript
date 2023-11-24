@@ -1,0 +1,42 @@
+#Currency Converter: Desenvolva um conversor de moeda que permita ao usuário converter
+entre diferentes moedas, fornecendo taxas de câmbio atualizadas.
+
+modelo conversor:
+    contructor ():
+        conversor.euro = 0
+        conversor.usd = 0
+        conversor.yen = 0
+        conversor.yuan = 0
+
+    funcao equalizer(a, base):
+        se a = euro:
+            conversor.usd = base * 1.07
+            conversor.yen = base * 160.28
+            conversor.yuan = base * 7.82
+        se a = usd:
+            conversor.euro = base * 0.93
+            conversor.yen = base * 149.38
+            conversor.yuan = base * 7.29
+        se a = yen:
+            conversor.euro = base * 0.0062
+            conversor.usd = base * 0.0067
+            conversor.yuan = base * 0.049
+        se a = yuan:
+            conversor.euro = base * 0.13
+            conversor.yen = base * 20.5
+            conversor.usd = base * 0.14
+
+
+cambio = conversor()
+imprime("Bem vindo")
+entrada("Por favor indique a moeda inicial da qual quer converter(euro, usd, yen, yuan): ", a)
+    
+entrada("Indique o valor na sua carteira: ", base)
+
+cambio.a = base
+
+cambio.equalizer(a, base)
+
+imprimir ("A sua carteira de momento vale: {cambio.euro}€, {cambio.usd}$, {cambio.yen}¥, {cambio.yuan}元")
+
+

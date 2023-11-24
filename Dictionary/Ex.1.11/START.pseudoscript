@@ -1,0 +1,27 @@
+#Gestão de Projetos: Criar um programa que permita ao utilizador gerir projetos. Cada
+projeto deve ter um nome, uma descrição e uma lista de tarefas.
+
+
+
+pointer = 1
+projetos = ()
+enquanto pointer == 1 && pointer == 2:
+
+    imprime("Bem vindo ao gestor de projectos")
+    entrada("Para criar um projeto novo enter 1, para consultar enter 2", pointer)
+
+    se pointer == 1:
+        entrada ("Indique o nome do projeto a introduzir em sistema: ", a)
+        entrada ("Indique a descrição do projeto: ", b)
+        pointer2 = 0
+        tarefas = []
+        enquanto pointer2 =! nulo:
+            imprime("Para parar de adicionar tarefas carregue enter.")
+            entrada("Indique uma tarefa para adicionar ao projeto: ", tar)
+            tarefas.adicionar[tar]
+    projetos = (a ->(b -> tarefas[]))
+
+    se pointer == 2:
+        entrada("Indique o nome do projeto a consultar: ", pro)
+        se pro está em projetos():
+            imprime (projetos.pro)

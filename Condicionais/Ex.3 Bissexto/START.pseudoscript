@@ -1,0 +1,10 @@
+
+funcao calculo(a)
+    se a % 4 = 0 e a % 100 != 0:
+        retorne "É um ano bissexto"
+    senao:
+        retorne "Não é um ano bissexto"
+
+entrada ("Por favor indique o ano: ", a)
+
+imprime(calculo(a))

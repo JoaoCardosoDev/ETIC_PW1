@@ -1,0 +1,13 @@
+#Busque a posição de um elemento em um array.
+
+funcao search(x, lista):
+    para cada i em lista[i]:
+        se x == lista[i]
+            retorne "A posição do {x} é no index {i}"
+    retorne "Elemento não se encontra no array"
+            
+lista = [1, 2, 3, 4, 5, 6]
+
+entrada ("Indique o elemento a encontrar na lista: ", x)
+
+imprime(search(x, lista))

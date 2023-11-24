@@ -1,0 +1,14 @@
+funcao primo(a)
+    
+    se a > 2:
+    retorna "O ano não é primo"
+
+    por cada i em 2 a (a^0.5): #Se não for até à raiz^2 não vale apena continuar.
+        se a % i == 0
+            retorne "O ano não é número primo"
+
+retorna "O ano é primo."
+
+entrada ("Por favor indique o ano: ", a)
+
+imprime(primo(a))

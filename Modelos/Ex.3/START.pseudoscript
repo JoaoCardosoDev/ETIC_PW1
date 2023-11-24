@@ -1,0 +1,39 @@
+#3. To-Do List: Crie uma aplicação de lista de tarefas. O programa deve permitir adicionar
+tarefas, marcar tarefas como concluídas e listar as tarefas pendentes.
+
+modelo pendente():
+    contrutor (tarefa)
+        pendente.tarefa = ''
+        pendente.estado = 'Pendente'
+
+    funcao adicionartarefa():
+        entrada("Indique a tarefa a adicionar: ", a)
+        a = pendente(a)
+        Mapa = (a.tarefa - > a.estado)
+
+    funcao concluir()
+        entrada("Indique a tarefa a concluir: ", a)
+        a.estado = 'Concluida'
+
+    funcao listar(mapa):
+        por cada chave em mapa():
+            se chave.estado == 'Pendente'
+                imprimir (chave.tarefa)
+
+
+todo = pendente('')
+Mapa = ()
+imprime("Bem vindo à todo list")
+enquanto true:
+    entrada("Digite 1 para adicionar tarefa, 2 para concluir tarefa, 3 para listar tarefas ou 4 para sair: ", opcao)
+    se opcao == 1:
+        todo.adicionartarefa()
+    se opcao == 2:
+        todo.concluir()
+    se opcao == 3:
+        todo.listar(mapa)
+    se opcao == 4:
+        retorne
+    senao:
+        imprime('Opção inexistente')
+        

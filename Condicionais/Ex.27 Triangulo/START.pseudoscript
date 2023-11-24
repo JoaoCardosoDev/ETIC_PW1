@@ -1,0 +1,15 @@
+funcao comparador(a,b,c)
+    se [a=90] ou [b=90] ou [c=90]:
+        retorne "O triangulo é retângulo"
+    se [a>90] ou [b>90] ou [c>90]:
+        retorne "O triangulo é obtusângulo"
+    se [a<90] ou [b<90] ou [c<90]:
+        retorne "O triangulo é acutângulo"
+
+entrada ("Por favor indique o primeiro de três angûlos: ", a)
+
+entrada ("Por favor indique o segundo de três angûlos: ", b)
+
+entrada ("Por favor indique o terceiro de três angûlos: ", c)
+
+imprime(comparador (a,b,c))

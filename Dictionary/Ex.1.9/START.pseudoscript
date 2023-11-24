@@ -1,0 +1,36 @@
+#Ranking de Pontuações: Criar um programa que permita ao utilizador inserir nomes e
+pontuações de jogadores e, em seguida, mostrar um ranking dos jogadores com as
+melhores pontuações.
+
+funcao ordenardicio(dicionario):
+    org=[]
+    placeholder=()
+    por cada i em dicionario.valores(i):
+        org.adicionar(dicionario.valores(i))
+        ordenarlista(org)
+    por cada i em org[i]:
+        placeholder = (org[i] -> dicionario.chaves(org[i]))
+    retorne dicionario   
+
+
+funcao ordenarlista(lista)
+    por cada i em lista[i]
+        por cada i em lista[i]
+            se lista[i] < lista[i + 1]:
+                x = lista [i]
+                lista [i] = lista [i+1]
+                lista [i+1] = x
+    
+
+
+jogadores = ()
+a = 0
+enquanto a!=nulo:
+    imprime("Introduza os dados de jogadores e suas respetivas pontuações, carregue enter para apresentar o ranking")
+    entrada("Introduza o nome do jogador: ", a)
+    entrada("Introduza os seus pontos: ", b)
+    jogadores (a -> b)
+
+imprimir(ordenardicio(jogadores))
+
+

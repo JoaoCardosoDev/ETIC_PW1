@@ -1,0 +1,16 @@
+
+
+
+funcao checker(a):
+    se a > 0:
+        imprime ("Positivo")
+    se a < 0:
+        imprime ("Negativo")
+    senao:
+        imprime("É zero")
+
+
+
+entrada ("Valor: ", a)
+
+checker(a)

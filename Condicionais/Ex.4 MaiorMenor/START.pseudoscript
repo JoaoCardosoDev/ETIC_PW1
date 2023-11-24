@@ -1,0 +1,13 @@
+funcao comparar(a,b)
+    se a > b:
+        imprime ("{a} é maior", a)
+    se a < b:
+        imprime ("{b} é maior", b)
+    senao:
+        imprime ("São iguais")
+
+entrada("1º número: ", a)
+
+entrada("2º número: ", b)
+
+comparar(a,b)

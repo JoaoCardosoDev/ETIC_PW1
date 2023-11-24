@@ -1,0 +1,15 @@
+
+
+funcao verificar(lista, a)
+    n = 0
+    por cada i em lista[i]:
+        se a == lista[i]
+            imprime ("É igual")
+        senao:
+            imprime("Não é igual")
+
+lista = [ 1, 2, 3, 4]
+
+entrada("Indicar item a verificar: ", a)
+
+verificar(lista, a)

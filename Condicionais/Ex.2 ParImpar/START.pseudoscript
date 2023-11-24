@@ -1,0 +1,11 @@
+
+
+funcao ParImpar(a):
+    se a % 2 == 0:
+        imprime("É par")
+    imprime("É impar")
+
+
+entrada ("Digite o número: ", a)
+
+ParImpar(a)

@@ -1,0 +1,25 @@
+#Registo de Compras: Criar um programa que permita ao utilizador registar suas
+compras, associando produtos e preços. O programa deve calcular o total das
+compras. Nota: O aluno deve criar um loop para permitir várias entradas de compras.
+
+funcao totalcompras(lista):
+    total = 0
+    para cada chave em lista.chaves:
+        total = total + lista.chave
+    retorna total
+
+imprime("""
+===================================
+============= Welcome =============
+======== Programa Compras =========
+===================================
+""")
+a = 0
+imprime("Para parar de introduzir items carregue enter")
+enquanto a =! nulo:
+    entrada("Indique o produto a adicionar à lista: ", a)
+    entrada("Indique o valor em € de {a}", b)
+    lista = (a -> b)
+
+
+imprime("O total das suas compras é {totalcompras(lista)}€")

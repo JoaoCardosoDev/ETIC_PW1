@@ -1,0 +1,27 @@
+#Verifique se um array está ordenado.
+
+funcao array(x, y)
+    x = []
+    counter = 0
+    enquanto counter < y:
+        entrada ("Indique número a adicionar: ", a)
+        x.adicionar(a)
+        counter++
+
+funcao verificar(x[])
+    por cada i em x[i]
+        se x[i] > x[i + 1]
+            se x[i + 1] < x[i + 2] 
+                imprime("Não ordenado")
+        senao:
+            x[i] < x[i + 1]
+                se x[i + 1] > x[i + 2]
+                    imprime("Não ordenado")
+
+entrada("Indique o nome do array: ", x)
+entrada("Indique o número de slots: ", y)
+
+array(x, y)
+
+verificar(x[])
+

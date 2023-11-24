@@ -1,0 +1,69 @@
+#Booking System: Crie uma aplicação de reservas que permita aos usuários agendar
+compromissos ou reservar quartos de hotel. O programa deve gerenciar datas e horários
+disponíveis.
+
+modelo reserva:
+    contrutor(nome, mes, inicio, fim):
+        reserva.nome = nome
+        reserva.mes = mes
+        reserva.inicio = inicio
+        reserva.fim = fim
+    
+    funcao alterardisp(mes()):
+        para cada chave de mes.(reserva.inicio) a mes.(reserva.fim):
+            mes.chave-=1
+        retorna mes()
+
+
+
+funcao verificardisp(mes, inicio, fim)
+    counter = inicio
+    enquanto counter <= fim:
+        se mes.counter <= 0:
+            imprime("Não existe disponibilidade no dia {counter}")
+            retorna falso
+        counter++
+
+funcao criarreserva(mes, inicio, fim, reservacounter)
+    entrada("Indique o nome para a reserva: ", nome)
+    se verificardisp(mes, inicio, fim):
+        reservacounter+1 = id
+        id = reserva(nome, mes, inicio, fim)
+        id.alterardisp(mes())
+    retorna id && reservacounter = id
+
+#####---------#### Base de dados
+#Na base de dados consiste um dicionario por mes com o número de vagas disponivel para cada mes
+...
+mes(01->10, 02->10, 03->10....)
+...
+reservacounter = 0
+#####--------#####
+
+imprime("Bem vindo")
+opcao = 0
+enquanto opcao =! Q:
+    entrada("Indique 1 para criar reserva, 2 para verificar reserva existente, 3 para alterar reserva, Q para sair: ", opcao)
+    se opcao == 1:
+        entrada("Para fazer uma reserva indique o mês a fazer a reserva ", mes)
+        entrada("Indique a data de inicio: ", inicio)
+        entrada("Indique a data de fim: ", fim)
+        criarreserva(mes, inicio, fim, reservacounter)
+    se opcao == 2:
+        entrada("Indique o número da reserva a verificar: ", reserva)
+        imprime(reserva.nome)
+        imprime(reserva.mes)
+        imprime(reserva.inicio)
+        imprime(reserva.fim)
+    se opcao == 3:
+        entrada("Indique a reserva a alterar: ", reserva)
+        entrada("Indique se pretende alterar o nome, mes, check-in ou check-out: ", alterar)
+            se alterar == "nome":
+                entrada("Novo nome: ", reserva.nome)
+            se alterar == "mes":
+                entrada("Novo mes: ", reserva.mes)
+            se alterar == "check-in":
+                entrada("Novo check-in: ", reserva.inicio)
+            se alterar == "check-out":
+                entrada("Novo check-out", reserva.fim)
+            

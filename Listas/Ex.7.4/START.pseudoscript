@@ -1,0 +1,10 @@
+#Concatene duas strings
+
+lista1 = [h, e, l, l, o]
+lista2 = [w, o, r, l, d]
+
+funcao concatene(lista1, lista2)
+    por cada i em lista2:
+        adicione.lista1(lista2[i])
+
+concatene(lista1, lista2)

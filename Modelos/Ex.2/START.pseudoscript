@@ -1,0 +1,23 @@
+#Guess the Number: Desenvolva um jogo em que o computador escolhe um número
+aleatório e o jogador tenta adivinhar qual é. O programa deve fornecer dicas para indicar se o
+palpite está muito alto ou muito baixo.
+
+modelo guess:
+    contrutor():
+        guess.numero = aleatorio()
+
+    funcao comparador(input):
+        se input < guess.numero:
+            imprime("Muito pequeno!")
+        senao:
+            imprime("Muito grande!")
+
+
+imprime("Bem vindo")
+imprime("O computador gerou um número aleatório.")
+jogo = guess()
+enquanto input =! jogo.numero:
+    entrada ("Qual é o seu palpite? ", input)
+        jogo.comparador(input)
+
+imprime("You got it!")

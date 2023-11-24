@@ -1,0 +1,37 @@
+#1. Agenda de Contatos: Deve criar um programa que permita ao utilizador adicionar
+nomes e números de telefone a uma agenda de contatos. Nota: Deve criar um menu
+para adicionar contatos.
+
+funcao adicionar(a, b):
+    contactos = (a -> b)
+    imprime ("{contactos.a} adicionado a contactos com o número {contactos.b}")
+
+funcao menu()
+
+contactos = ()
+imprime("""
+===================================
+============= Welcome =============
+========= Programa Agenda =========
+===================================
+""")
+entrada("""
+Carregue 1 para adicionar um contacto ao menu
+Carregue 2 para listar os contactos existentes
+Carregue 3 para sair
+
+""",opcao)
+enquanto opcao =! 3:
+
+    se opcao == 1:
+        entrada("Indique o nome que pretende adionar à lista: ", a)
+        entrada("Indique o número a adicionar a contacto: ", b)
+        adicionar(a,b)
+
+    se opcao == 2:
+        imprime(contactos)
+
+    senao:
+        imprime("Caracter invalido")
+
+imprime("Quitting")

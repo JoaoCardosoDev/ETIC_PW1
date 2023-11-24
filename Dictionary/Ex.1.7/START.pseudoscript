@@ -1,0 +1,63 @@
+#Agenda de Compromissos: Criar um programa que permita ao utilizador agendar
+compromissos e a sua ordem. O programa deve mostrar os compromissos ordenados
+
+#Faz scroll down, está lá outra solução
+
+funcao ordenardicio(dicionario):
+    org=[]
+    placeholder=()
+    por cada i em dicionario.chaves(i):
+        org.adicionar(dicionario.chaves(i))
+        ordenarlista(org)
+    por cada i em org[i]:
+        placeholder = (org[i] -> dicionario.chaves(org[i]))
+    retorne dicionario
+    
+
+funcao ordenarlista(lista)
+    por cada i em lista[i]
+        se lista[i] < lista[i + 1]:
+            x = lista [i]
+            lista [i] = lista [i+1]
+            lista [i+1] = x
+    
+
+a = 0
+
+enquanto a =! nulo:
+    imprime("Para avançar ignore o prompt e carregue enter")
+    entrada("Indique o compromisso: ", a)
+
+    entrada("Indique a mês do compromisso(MM): ", mes)
+    hours = (hour -> a)
+
+    entrada("Indique a hora do compromisso(2400, hora militar):", hora)
+    months = (month -> horas)
+
+    entrada("Indique ano do compromisso: ", year)
+    years = (year -> months)
+    
+    ordernardicio(hours)
+    ordernardicio(months)
+    ordernardicio(years)
+    
+imprimir(years)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+#Agenda de Compromissos: Criar um programa que permita ao utilizador agendar
+compromissos e a sua ordem. O programa deve mostrar os compromissos ordenados
+
+
+comp = ()
+enquanto a =! nulo:
+    imprime("Para avançar e listar os seus compromissos ignore o prompt e carregue enter")
+    entrada("Por favor indique a ordem do seu compromisso: ", a)
+    entrada("Por favor indique o compromisso", b)
+    comp (a -> b)
+
+imprimir(ordenardicio(comp))
+
+
+
+

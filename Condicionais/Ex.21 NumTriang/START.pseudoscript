@@ -1,0 +1,21 @@
+funcao triangular(numero):
+    n = 0
+    soma = 0
+
+    enquanto soma < numero:
+        n += 1
+        soma = (n * (n + 1)) // 2  # A divisão tem de ser inteira (assim o diz o chatgpt)
+
+    se soma == numero
+        retorna true
+    senao:
+        retorna false
+
+
+imprime("Indique o número a verificar: ", numero)
+
+se triangular(numero):
+    imprime("{numero} é um número triangular.")
+
+senao:
+    imprime("{numero} não é um número triangular.")

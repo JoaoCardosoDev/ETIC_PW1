@@ -1,0 +1,11 @@
+funcao formula(a)
+    se a > 0:
+        a^0.5 = b
+
+        retorne ("A raiz quadrada de {a} é {b}", a, b)
+    senao:
+        retorne "Número inválido"
+
+entrada ("Por favor digite um número para obter a raiz quadrada", a)
+
+formula(a)

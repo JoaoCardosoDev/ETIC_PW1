@@ -1,0 +1,46 @@
+#Sistema de Biblioteca: Criar um sistema de biblioteca que permita ao utilizador
+pesquisar, emprestar e devolver livros. Nota: O aluno deve criar estruturas para
+representar os livros e o estado de empréstimo.
+
+modelo livro:
+    contrutor (estado, nome, ISBN)
+        #estado true está disponivel, falso está emprestado
+        livro.estado = true
+        livro.titulo = string
+        livro.isbn = nulo
+
+
+#array de todos os titulos do objeto livro.titulos
+titulos = [livro.titulo]
+
+#array de todos os isbn
+isbns = [livro.isbn]
+
+imprime("Bem vindo")
+entrada("Para pesquisar livros digite 1, para levantar livros 2 e para devolver um livro 3: ", pointer)
+se pointer == 1:
+    entrada("Indique o nome do livro a pesquisar ou o seu ISBN: ", a)
+    se a está em titulos ou isbns:
+        imprimir(livro.titulo.a)
+        imprimir(livro.isbn.a)
+        se livro.estado == true:
+            imprime("Disponivel")
+        senao:
+            imprime("Indisponivel")
+se pointer == 2:
+    entrada ("indique o nome do livro ou isbn: ", a)
+    se a está em titulos ou isbns:
+        se livro.estado.a = true:
+            livro.estado.a == false
+        senao:
+            imprime("Indisponivel")
+se pointer == 3:
+    entrada ("indique o nome do livro ou isbn: ", a)
+    se a está em titulos ou isbns:
+        se livro.estado.a = false:
+            livro.estado.a == true
+        senao:
+            imprime("Indisponivel")
+senao:
+    imprime("Acedeu ao menu secreto")
+    imprime("All your base are belong to us.")

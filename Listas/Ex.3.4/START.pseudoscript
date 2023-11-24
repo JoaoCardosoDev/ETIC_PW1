@@ -1,0 +1,13 @@
+#Inverta a ordem dos elementos em um array.
+
+funcao inverter(lista)
+    x = tamanho(lista)-1
+    lista2 = []
+    enquanto  x < 0:
+        lista2.adicionar(lista[x])
+        x = x - 1
+    retorna lista2
+    
+lista = [1, 2, 3]
+
+inverter(lista)

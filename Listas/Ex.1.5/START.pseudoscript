@@ -1,0 +1,6 @@
+#Adicione um elemento ao final de um array.
+
+lista = []
+entrada("Indique elemento a adicionar: ", x)
+
+lista.adicionar(x)

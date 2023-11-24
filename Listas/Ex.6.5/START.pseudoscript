@@ -1,0 +1,10 @@
+#Rotacione os elementos de um array para a direita.
+
+funcao rotadireita(lista):
+    
+    lista[:] = lista[-1:] + lista[:-1]
+    retorna lista
+
+entrada("Digite uma palavra a ser rotacionada: ", lista)
+
+imprime("{rotadireita(lista)}")

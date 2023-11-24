@@ -1,0 +1,18 @@
+funcao perfeito(a):
+
+    divisores = 0
+    por cada i de 1 a [(a/2)+1]:
+        se a % i == 0:
+            divisores++
+
+retorne divisores == a
+
+
+
+entrada("Indique o número a avaliar: ",a)
+
+se perfeito(a):
+    print("É perfeitinho")
+senao:
+    print("Não é")
+ 

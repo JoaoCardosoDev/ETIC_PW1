@@ -1,0 +1,12 @@
+
+funcao niss(a)
+    se a < 1100:
+        final = a * 0.89 
+        retorne "O valor final é {final}"
+    senao:
+        final = a * 0.725
+        retorne "O valor final é {final}"
+
+entrada ("Por favor indique o salário a tributar: ", a)
+
+imprime(niss(a))

@@ -1,0 +1,20 @@
+funcao primo(n):
+    se n < 2:
+        retorna false
+    para cada numero de (2 a n^0.5 + 1):
+        se n % numero == 0:
+            return false
+    retorna true
+
+funcao primo_mersenne(p):
+    se primo(p) = false:
+        retorna false
+    mersenne = 2^p - 1
+    retorna primo(mersenne)
+
+entrada ("Digite um número a avaliar: ", p)
+
+se primo_mersenne(p):
+    imprime("É um número primo de Mersenne.")
+senao:
+    imprime("Não é um número primo de Mersenne.")

@@ -1,0 +1,27 @@
+#Gestão de Stock: Criar um programa que faça a gestão de stock de produtos. O
+utilizador deve ser capaz de adicionar e remover produtos ao stock. Nota: O aluno
+deve criar opções para adicionar e remover produtos.
+
+stock = ()
+
+funcao adicionar(a,b,stock()):
+    stock = (a -> b)
+
+funcao remover(a, b, stock()):
+    stock.a = stock.a - b
+
+resposta = 0
+
+enquanto resposta =! 'Q':
+    entrada("Digite A para adicionar ao stock, R para remover algo do stock existente ou Q para sair ", resposta)
+    se resposta = A ou resposta = a:
+        entrada ("Indique o produto a adicionar: ", a)
+        entrada ("Indique a quantidade de {a} em stock: ", b)    
+        adicionar(a,b,stock())
+    se resposta = R ou resposta=r:
+        entrada ("Indique o produto a adicionar: ", a)
+        entrada ("Indique a quantidade de {a} a remover em stock: ", b)  
+        remover(a,b,stock())
+
+imprime("O stock atual é {stock}")
+imprime("Quitting")

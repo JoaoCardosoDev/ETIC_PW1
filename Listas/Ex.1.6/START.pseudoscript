@@ -1,0 +1,10 @@
+# Remover o último elemento da lista
+
+funcao eliminar(lista)
+    x = tamanho(lista)
+    lista = lista [0:x - 2]
+
+entrada ("Indique a lista a eliminar último elemento: ", lista)
+
+eliminar(lista)
+

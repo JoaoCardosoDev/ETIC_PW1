@@ -1,0 +1,65 @@
+#8. Simple Quiz Game: Crie um jogo de quiz com perguntas de múltipla escolha. O programa
+deve rastrear a pontuação do jogador e fornecer feedback sobre as respostas corretas ou
+incorretas.
+
+modelo jogador:
+    contrutor():
+        jogador.points = 0
+        jogador.correto = 0
+        jogador.incorreto = 0
+
+modelo board:
+    contrutor(lista)
+        board.jogadores = lista
+
+    funcao gamestart():
+        imprimir("Sejam bem vindos {board.jogadores}")
+    
+    funcao questionrandomizer():
+        x = aleatorio(1 - 100)
+        resposta = x + x 
+            imprime ("Quanto é {x}+{x}: 
+                    a) {resposta + aleatorio(1-3)}
+                    b) {resposta - aleatorio(1-3)}
+                    c) {resposta}")
+            para cada i em board.jogadores[]:
+                entrada ("{board.jogadores[i]} resposta", opcao)
+                se opcao =! c:
+                    Imprime ("Incorreto")
+                    board.jogadores[i].incorreto +=1
+                senao:
+                    imprime ("Correto")
+                    board.jogadores[i].correto +=1
+                    board.jogadores[i].points +=1
+
+
+
+
+grupo = []
+imprime("Bem vindo")
+entrada("Indique o nome do jogador", nome)
+
+nome = jogador()
+grupo.adicionar[nome()]
+
+reposta = Y
+enquanto resposta = Y:
+    entrada("Pretende adicionar mais jogadores? (Y|N)", resposta)
+    entrada("Indique o nome do jogador", nome)
+    nome = jogador()
+    grupo.adicionar[nome()]
+
+jogo1 = board(grupo)
+
+jogo1.gamestart()
+
+entrada("Quantas perguntas pretende que o jogo tenha: ",numero)
+
+de 1 a numero:
+    jogo1.questionrandomizer()
+
+imprime("Parabéns chegou ao final!")
+
+por cada i em grupo[i]:
+    imprime ("Jogador {grupo[i]} tem {grupo[i].points} pontos, com {grupo[i].correto} respostas corretas e {grupo[i].incorreto} respotas incorretas.")
+

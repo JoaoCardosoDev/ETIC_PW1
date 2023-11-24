@@ -1,0 +1,32 @@
+#Calculadora de Médias: Criar um programa que calcule a média de notas fornecidas
+pelo utilizador para vários alunos. Nota: Deve questionar o utilizador de todas as
+inserções necessárias.
+
+funcao introducao(n):
+    counter = 0
+    notas = ()
+    enquanto counter < n:
+        a = 0
+        b = 0
+        entrada("Indique o nome do aluno: ", a)
+        entrada("indique a nota d@ alun@ {a}: ", b)
+        notas = (a -> b)
+        counter++
+    retornar notas
+
+funcao sum(dicionario)
+    para cada i em dicionario.valores():
+        sum = sum + dicionario.valores[]
+    retorna sum / dicionario.tamanho()
+
+
+n = -1
+enquando n < 0:
+    entrada ("Indique o número de alunos a calcular a média: ", n)
+
+notas = introducao(n)
+
+imprime("A média das notas dos alunos é {sum(introducao(n))}")
+imprime("CHUMBARAM TODOS")
+
+

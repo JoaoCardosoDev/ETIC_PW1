@@ -1,0 +1,22 @@
+#Calculadora de Idade: Criar um programa que calcule a idade de várias pessoas com
+base no seu ano de nascimento. Nota: O aluno deve solicitar o ano de nascimento ao
+utilizador.
+
+
+
+aniv = ()
+funcao calculo(a, aniv()):
+    anoatual = 2023
+    se a está em aniv():
+        retorne aniv.a
+    senao:
+        aniv(a -> anoatual - a)
+        retorne aniv.a
+
+
+b = 0
+enquanto b != nulo:
+    imprimir("Para parar de calcular carregue enter.")
+    entrada("Por favor indique o ano de nascimento d@ alun@", a)
+    calculo(a, aniv())
+    imprime("@ alun@ tem {calculo(a)} anos")

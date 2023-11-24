@@ -1,0 +1,10 @@
+#Crie um array com os dias da semana.
+
+funcao semana()
+    dias = [0 a 6]
+    counter = 0
+    enquanto counter < 6:
+        dias[counter] = entrada("Indique o {counter + 1}º dia da semana: ")
+        counter++   
+
+semana()

@@ -1,0 +1,35 @@
+#Temperature Converter: Faça um conversor de temperatura que permita ao usuário
+converter entre Celsius e Fahrenheit. O programa deve aceitar uma entrada de temperatura e
+realizar a conversão.
+
+modelo temperatura:
+    contrutor(a):
+        temperatura.base = 0
+        temperatura.basetipo = ''
+        temperatura.celsius = 0
+        temperatura.fahrenheit = 0
+
+    funcao celsius():
+        temperatura.celsius = (temperatura.base - 32)/1.8
+
+    funcao fahr():
+        temperatura.fahrenheit = temperatura.base * 1.8 + 32
+
+imprime("Welcome!")
+conversor = temperatura(0)
+
+entrada("Indique a temperatura a converter colocando C no fim para Celsius ou F no fim para Fahrenheit: ", input)
+    conversor.basetipo = input[-1]
+    conversor.base = input [0:-1]
+
+    se conversor.basetipo == 'C':
+        imprime(conversor.fahrenheit())
+
+    se conversor.basetipo == 'F':
+        imprime(conversor.celsius())
+
+    senao:
+        imprime("Tipagem incorreta")
+        retorne
+
+

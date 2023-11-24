@@ -1,0 +1,11 @@
+#Inicialize um array com 5 repetições do número 3.
+
+funcao repeticao()
+    array = []
+    counter = 0
+    enquanto counter < 5:
+        array[counter] = 3
+        counter++
+
+
+repeticao()

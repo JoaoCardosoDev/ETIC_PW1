@@ -1,0 +1,34 @@
+#Registo de Finanças Pessoais: Criar um programa que permita ao utilizador registar
+despesas e receitas pessoais. O programa deve calcular o saldo atual. Nota: O aluno
+deve criar estruturas para representar despesas e receitas.
+
+modelo balance:
+    contrutor (despesas, receitas, saldo)
+        balance.despesas = []
+        balance.receitas = []
+        balance.saldo = 0
+
+funcao adidespesas():
+    entrada ("Indique a despesa a adicionar à sua lista: ", a)
+    balance.despesas.adicionar(a)
+
+funcao adireceitas():
+    entrada ("Indique a receita a adicionar à sua lista: ", a)
+    balance.receitas.adicionar(a)
+
+funcao calcsaldo():
+    por cada i em balance.receitas[i]:
+        balance.saldo = balance.saldo + balance.receitas[i]
+    por cada i em balance.despesas[i]:
+        balance.saldo = balance.saldo - balance.despesa[i]
+    retorne balance.saldo
+
+pointer = 1
+enquanto pointer =! nulo:
+    imprime("Para adicionar uma despesa digite 1, para adicionar uma receita digite 2, para ver saldo digite 3: ", pointer)
+    se pointer == 1:
+        adidespesas()
+    se pointer == 2:
+        adireceitas()
+    se pointer == 3:
+        imprime(calcsaldo())

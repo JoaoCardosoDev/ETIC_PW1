@@ -1,0 +1,11 @@
+funcao formula(a)
+    
+    cada i em n = i ^ 2
+        se a = n:
+            retorne "O número é um quadrado perfeito"
+        senao:
+            i += 1
+
+entrada ("Indique o número a analisar: ", a)
+
+imprime(formula(a))

@@ -1,0 +1,5 @@
+
+
+entrada("Indique o nome para a lista", a)
+
+a = a[]

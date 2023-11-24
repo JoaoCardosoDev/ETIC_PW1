@@ -1,0 +1,48 @@
+#1. Calculator App: Crie um programa que simule uma calculadora básica, permitindo a entrada
+de dois números e realizando operações de adição, subtração, multiplicação e divisão.
+
+
+modelo calculadora:
+    contrutor()
+        calculadora.base = 0
+        calculadora.buffer = 0
+
+funcao atribuirvalor():
+    se calculadora.base == 0 
+        entrada("Indique o primeiro valor: ",a)
+        calculadora.base = a
+    senao:
+        entrada("Indique o segundo valor: ",a)
+        calculadora.buffer = a
+
+funcao operador(operador):
+        se operador == '=':
+            imprimir (calculadora.base)
+            retorne
+        senao:
+            calculadora.base = (calculadora.base operador calculadora.buffer)
+            calculadora.buffer = 0
+
+imprime("Bem vindo à calculadora")
+imprime("Operadores válidos: *; /; +; -; =; C")
+
+calculadora.atribuirvalor()
+
+enquanto true:
+    entrada("Indique o operador da função: ", operador)
+
+        se operador == '*' && '/' && '+' && '-' && '=':
+
+            calculadora.atribuirvalor()
+            calculadora.operador(operador)
+
+        se operador == 'C':
+            imprimir ("Clear")
+            retorne
+
+        senao:
+            imprime ("Operador invalido")
+            retorne
+
+
+

@@ -1,0 +1,15 @@
+funcao comparador(a,b,c):
+    se a = b = c:
+        retorne "O triângulo é equilátero"
+    se [a != b] e [a != c] [b != c]:
+        retorne "O triângulo é escaleno"
+    senao:
+        retorne "O triângulo é isósceles"
+
+entrada ("Primeiro lado do triângulo: ", a)
+
+entrada ("Segundo lado do triângulo: ", b)
+
+entrada ("Terceiro lado do triângulo: ", c)
+
+comparador(a,b,c)

@@ -1,0 +1,49 @@
+#Sistema de Reservas de Viagens: Criar um programa que permita ao utilizador
+reservar voos, hotéis e alugar carros para uma viagem. Nota: O aluno deve criar
+estruturas para representar voos, hotéis e carros e permitir que o usuário faça
+reservas.
+
+voos
+    ex. lisboa -> 2 londres -> 3
+carros  
+    ex. LISvw -> 1 LISbmw -> 2 LDNvw -> 2 LDNbmw -> 3
+hoteis
+    ex. lisboahotel1 -> 2 lisboahotel2 -> 2 londreshotel -> 3
+
+#Base de dados#
+
+modelo Lisboa:
+    construtor(voos, carros, hoteis)
+        Lisboa.voos = 50
+        Lisboa.carros = (vw -> 10, bmw -> 20, kia -> 10)
+        Lisboa.hoteis = (hotel1 -> 50, hotel2 -> 150, hotel3 -> 100)
+
+destinos = [Lisboa, Londres, Luxemburgo]
+
+#Controlo - Dicionario que é controlado pelo tamanho do modelo e que não 
+#permite adicionar novas entradas quando acima
+
+#sistema ainda consegue ser muito aprimorado
+
+imprime("Bem vindo ao sistema de reservas")
+imprime("Os destinos disponiveis são  {destinos}")
+entrada("Por favor indique o destino: ", a)
+se a está em destinos:
+    se Lisboa.voos > 0:
+        imprime ("Os hoteis disponiveis no destino são:")
+        para cada chave em Lisboa.hoteis():
+            se lisboa.hoteis.chave > 0:
+                imprime(chave)
+        entrada("Por favor indique o hotel a reservar: ", b)
+        imprime("Os carros disponiveis são:")
+        para cada chave em Lisboa.carros():
+            se lisboa.carros.chave > 0:
+                imprime(chave)
+        entrada("Por favor indique o carro a reservar: ", c)
+        Lisboa.voos-=1
+        Lisboa.hoteis.b-=1
+        Lisboa.carros.c-=1
+    
+
+senao:
+    imprime("Destino não disponivel")

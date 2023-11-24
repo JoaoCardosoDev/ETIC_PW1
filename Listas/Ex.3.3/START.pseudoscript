@@ -1,0 +1,10 @@
+#Copie os elementos de um array para outro.
+
+lista1 = [1, 2, 3]
+lista2 = []
+
+funcao copiar(lista1, lista2)
+    por cada i em lista1[i]:
+        lista2.adicionar(lista1[i])
+
+copiar(lista1, lista2)

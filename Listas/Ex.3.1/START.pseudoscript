@@ -1,0 +1,18 @@
+#Some os elementos de dois arrays e armazene o resultado em um terceiro array.
+
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+funcao adicionar(lista1, lista2)
+    lista3 = []
+    enquanto tamanho(lista1) != tamanho(lista2):
+        se tamanho(lista1) > tamanho(lista2):
+            lista2.adicionar(0)
+        senao:
+            lista1.adicionar(0)
+
+    para cada i em lista1[]:
+        lista3.adicionar(lista1[i] + lista2[i])
+    retonar lista3
+
+imprime(adicionar(lista1, lista2))

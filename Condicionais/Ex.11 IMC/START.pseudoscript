@@ -1,0 +1,22 @@
+funcao idade(a)
+    se [a > 18] e [a < 65]:
+        entrada ("Peso: ", a)
+        entrada ("Altura(metros): ", b)
+        calculo (a,b)
+    senao: 
+        retorne "Idade invalida para calculo"
+
+
+funcao calculo(a,b)
+    a / b^2 = imc
+
+    se imc >= 25:
+        retorne "Overweight"
+    se imc < 18.5:
+        retorne "Underweight"
+    senao:
+        retorne "Normal weight"
+
+entrada("Por favor indique idade: ", a)
+
+idade(a)

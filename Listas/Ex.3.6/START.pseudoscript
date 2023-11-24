@@ -1,0 +1,12 @@
+#Encontre o maior valor em um array.
+
+funcao Maior(lista)
+    x = 0
+    por cada i em lista[i]:
+        se lista[i] > x:
+            x = lista[i]
+    retorne x
+
+entrada("Indique a lista a comparar: ", lista)
+
+imprime ("O maior elemento da lista é {Maior(lista)}")

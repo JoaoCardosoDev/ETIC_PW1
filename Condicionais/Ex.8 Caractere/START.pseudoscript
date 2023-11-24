@@ -1,0 +1,9 @@
+
+vogais = [a, e, i, o, u]
+
+entrada ("Insira caractere: ", a)
+
+se a está em vogais:
+    imprime("Volgal")
+senão:
+    imprime("Consoante")

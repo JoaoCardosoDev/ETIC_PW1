@@ -1,0 +1,13 @@
+#Preencha um array com os meses do ano.
+
+meses = []
+
+funcao add(lista)
+    x = 12
+    counter = 0
+    enquanto counter < x:
+        entrada ("Indique o {counter + 1}º mês do ano: ", a)
+        meses.adicionar(a)
+
+add()
+

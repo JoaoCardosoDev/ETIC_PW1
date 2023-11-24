@@ -1,0 +1,46 @@
+#5. Simple Text Editor: Desenvolva um editor de texto simples que permita ao usuário criar,
+editar e salvar arquivos de texto.
+
+modelo editor:
+    contrutor(a):
+        editor.titulo = (a -> '')
+
+    funcao criar():
+        entrada("Indique o titulo para o seu texto:", title)
+        entrada("Digite o seu texto: ", texto)
+
+    funcao editar():
+        entrada ("Indique ficheiro a editar(titulo): ", title)
+    
+        se title está em titulo.chaves:
+            imprime (titulo.title)
+            entrada("Edite o texto acima: ", texto)
+            titulo.title = texto
+        senao:
+            imprime("Ficheiro não encontrado")
+    
+    funcao salvar():
+        entrada("Indique o titulo onde quer guardar o texto: ", title)
+            se title está em titulo.chaves:
+                entrada ("Indique o texto a gravar: ", texto)
+                titulo.title = texto
+
+imprime('Bem vindo')
+Word = editor(a)
+opcao = 0
+
+entrada("Digite opção 1 para criar um texto, opção dois para editar um texto existente ou opção 3 para salvar o texto num titulo: ", opcao)
+
+    se opcao == 1:
+        word.criar()
+
+    se opcao == 2:
+        word.editar()
+
+    se opcao == 3:
+        word.salvar()
+    senao:
+        imprime("Opção invalida")
+        retorne
+
+

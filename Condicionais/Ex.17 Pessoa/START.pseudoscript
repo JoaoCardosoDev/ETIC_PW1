@@ -1,0 +1,20 @@
+
+funcao definir(a)
+    se a < 13 && a > 0:
+        retorne "Pessoa é uma criança"
+
+    se a > 13 && a < 18:
+        retorne "Pessoa é um adolescente"
+
+    se a > 18 && a < 59:
+        retorne "Pessoa é um adulto"
+
+    se a >= 60:
+        retorne "Pessoa é um idoso"
+    
+    senao:
+        retorne "Idade inválida"
+
+entrada ("Por favor indique a idade: ", a)
+
+imprime(definir(a))

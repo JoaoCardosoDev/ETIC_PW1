@@ -1,0 +1,23 @@
+funcao fibonacci(numero):
+
+    se numero < 0:
+        retorna falso
+
+    a = 0 
+    b = 1
+    enquanto a < numero:
+        a = b
+        b = a + b
+
+    se a == numero:
+        retorna true
+    senao:
+        retorna false
+
+entrada("Indique um número: ", numero)
+
+se fibonacci(numero):
+    imprime("É um número Fibonacci.")
+
+senao:
+    imprime("Não é um número Fibonacci.")

@@ -1,0 +1,25 @@
+funcao log2(numero, precisao=1e-10):
+    se numero <= 0:
+        retorna "O número tem de ser positivo")
+
+    aprox = 0
+    potencia = 1
+
+    enquanto tornapositivo(2**aprox - numero) > precisao: #Tive uma grande ajuda do ChatGPT aqui, tornapositivo aqui é para garantir que o resultado é sempre positivo
+        aprox += 1 / potencia
+        potencia *= 2
+
+    retorna aprox
+
+funcao sepotencia2(numero):
+
+    se numero > 0 and log2(numero) % 1 == 0:
+        retorna true
+
+
+imprime("Indique o número a verificar: ", numero)
+
+se sepotencia2(numero):
+    imprime("{numero} é uma potência de 2.")
+senao:
+    imprime("{numero} não é uma potência de 2.")

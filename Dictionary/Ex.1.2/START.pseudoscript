@@ -1,0 +1,16 @@
+#Contagem de Letras: Criar um programa que conte a frequência de letras em uma
+frase fornecida pelo utilizador. Nota: O utilizador deve fazer a inserção da frase.
+
+funcao contagem(a):
+    letras = ()
+    por cada elemento em a[]:
+        se a[elemento] está em a.chaves:
+            letras.(elemento)++
+        senao:
+            letras = (elemento -> 1)
+    retorna letras
+
+entrada ("Indique a frase a contabilizar: ", a)
+
+imprime(contagem(a))
+

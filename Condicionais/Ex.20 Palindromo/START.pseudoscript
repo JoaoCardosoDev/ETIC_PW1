@@ -1,0 +1,15 @@
+funcao checker(a)
+    n = tamanho(a)
+    b = 0
+    por cada i em a[i]:
+        se a[i] = a[:n]
+            b += 1
+
+    se b = n:
+        retorne ("É um palíndromo")
+    senao:
+        retorne ("Não é um palíndromo")
+
+entrada ("Digite a palavra: ", a)
+
+checker(a)

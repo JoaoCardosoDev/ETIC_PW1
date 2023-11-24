@@ -1,0 +1,36 @@
+funcao mod_exp(base, exp, mod):
+    result = 1
+    base = base % mod
+
+    enquanto exp > 0:
+        if exp % 2 == 1:
+            result = (result * base) % mod
+        exp = exp // 2
+        base = (base * base) % mod
+
+    retorna result
+
+funcao primo_fermat(p):
+    k=5
+    se p == 2 ou p == 3:
+        retorna true
+    se p <= 1 ou p % 2 == 0:
+        retorna false
+
+    # Realiza k tentativas de verificar o teste de Fermat
+    por cada número inteiro em k:
+        a = random.randint(2, p - 2)
+        se mod_exp(a, p - 1, p) != 1:
+            retorna false
+
+    retorna true
+
+
+entrada ("Digite um número a avaliar: ", p)
+
+se primo_fermat(p):
+    imprime("É um número primo de Mersenne.")
+senao:
+    imprime("Não é um número primo de Mersenne.")
+
+#Muita ajuda do chatgpt aqui

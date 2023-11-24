@@ -1,0 +1,51 @@
+#9. Inventory Management: Desenvolva um sistema simples de gestão de inventário para
+adicionar, remover e listar itens em um inventário fictício.
+
+modelo item:
+    contrutor(nome, stock):
+        item.nome = ''
+        item.stock = ''
+    
+modelo stock:
+    contrutor()
+        stock.lista = []
+        
+    funcao adicionar():
+        entrada("Indique o nome do item a adicionar: ", nome)
+        entrada("Indique o número de itens: ", stock)
+        nome = item (nome, stock)
+        stock.lista.adicionar[nome()]
+    
+    funcao remover():
+        entrada("Indique o nome do item a remover do stock", nome)
+            se nome está em stock.lista[]:
+                entrada("Indique o número de itens a remover: ", numero)
+                buffer = []
+                se (nome.stock - numero) < 0:
+                    por cada i em stock.lista[]:
+                        se stock.lista[i]=!nome:
+                            buffer.adicionar(stock.lista[i])
+                    stock.lista = buffer
+                senao:
+                    nome.stock-=1
+    
+    funcao listar():
+        por cada i em stock.lista[]:
+            imprime('Nome: {stock.lista[i].nome}')
+            imprime('Stock: {stock.lista[i].stock}')
+
+
+
+inventario = stock()
+imprime('Bem vindo ao seu inventario')
+entrada(' 1 para adiconar itens | 2 para remover item do sistem | 3 para listar inventário', resposta)
+se resposta == 1:
+    inventario.adicionar()
+se resposta == 2:
+    inventario.remover()
+se resposta == 3:
+    inventario.listar()
+senao:
+    imprime("Operação inválida")
+
+    

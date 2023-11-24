@@ -1,0 +1,9 @@
+funcao idade(a)
+    se a < 16:
+        retorne "Menor de 16, não pode votar."
+    senao:
+        retorne "Apto a votar"
+
+entrada ("Por favor indique a idade do votante: ", a)
+
+imprime(idade(a))

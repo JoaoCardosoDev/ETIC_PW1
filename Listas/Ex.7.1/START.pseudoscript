@@ -1,0 +1,13 @@
+#Conte o número de vogais numa string.
+
+vogais = [a, e, i, o, u]
+
+funcao counter(lista)
+    counter = 0
+    por cada i em lista[i]:
+        se lista[i] está em vogais:
+            counter+=1
+    retorna counter
+entrada("Indique uma palavra ou frase para as vogais serem contabilizadas: ", string)
+
+imprime("O número de vogais é {counter(string)}")

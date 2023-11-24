@@ -1,0 +1,16 @@
+
+
+funcao calculo(a)
+    resultado = a
+    se a > 0:
+        enquanto a > 0:
+            resultado = resultado * (a - 1)
+            a = a - 1 
+        retorna resultado
+    senao:
+        imprime ("Indique número positivo")
+
+entrada ("Por favor indique o número a calcular: ", a)
+
+imprime("O factorial de {a} é {calculo(a)}")
+

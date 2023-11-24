@@ -1,0 +1,41 @@
+#Implemente um algoritmo de pesquisa binária num array ordenado.
+
+funcao ordenar(lista)
+    por cada i em lista[i]
+        por cada i em lista[i]
+            se lista[i] < lista[i + 1]:
+                x = lista [i]
+                lista [i] = lista [i+1]
+                lista [i+1] = x
+
+
+funcao busca(lista, a)
+    x = tamanho(lista) / 2
+    enquanto a != lista[x]
+        se a > lista[x]:
+            x = (x + (x/2))
+        senao:
+            x = x/2
+
+
+funcao adicionar(x, y)
+    x = []
+    counter = 0
+    enquanto counter < y:
+        entrada ("Indique número a adicionar: ", a)
+        x.adicionar(a)
+        counter++
+
+        
+entrada("Indique o nome do array: ", x)
+entrada("Indique o número de slots: ", y)
+
+adicionar(x, y)
+
+ordenar(x)
+
+entrada("Elemento a encontrar: ", z)
+
+busca(x, z)
+
+

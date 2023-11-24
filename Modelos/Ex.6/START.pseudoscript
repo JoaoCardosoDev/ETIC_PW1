@@ -1,0 +1,46 @@
+#BMI Calculator: Crie um programa que calcule o índice de massa corporal (BMI) com base
+no peso e na altura do usuário. O programa deve indicar em qual faixa de BMI o usuário se
+encontra.
+
+modelo pessoa:
+    contrutor ():
+        pessoa.idade = 0
+        pessoa.peso = 0
+        pessoa.altura = 0
+        pessoa.bmi = pessoa.peso / (pessoa.altura * pessoa.altura)
+        pessoa.faixa = ''
+
+    funcao iniciacao():
+        entrada("Indique a sua idade: ", pessoa.idade)
+        entrada("Indique a sua peso: ", pessoa.peso)
+        entrada("Indique a sua altura: ", pessoa.altura)
+
+    funcao faixa():
+        se pessoa.bmi < 16:
+            pessoa.faixa = 'Severe Thinness'
+        se pessoa.bmi >= 16 && pessoa.bmi <= 17:
+            pessoa.faixa = 'Moderate Thinness'
+        se pessoa.bmi > 17 && pessoa.bmi < 18.5:
+            pessoa.faixa = 'Mild Thinness'
+        se pessoa.bmi >= 18.5 && pessoa.bmi < 25:
+            pessoa.faixa = 'Normal'
+        se pessoa.bmi >= 25 && pessoa.bmi < 30:
+            pessoa.faixa = 'Overweight'
+        se pessoa.bmi >= 30 && pessoa.bmi < 35:
+            pessoa.faixa = 'Obese Class I'
+        se pessoa.bmi >= 35 && pessoa.bmi < 40:
+            pessoa.faixa = 'Obese Class II'
+        se pessoa.bmi >= 40:
+            pessoa.faixa = 'Obese Class III'
+
+
+
+
+imprime("Bem vindo")
+entrada("Indique o nome da pessoa a calcular: ", nome)
+
+nome = pessoa()
+
+nome.iniciacao()
+
+nome.faixa()

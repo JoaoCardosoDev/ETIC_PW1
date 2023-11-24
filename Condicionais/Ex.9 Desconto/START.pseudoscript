@@ -1,0 +1,10 @@
+funcao produto(a):
+
+    se a>100:
+        imprime (a * 0.9 + "%")
+    senao:
+        imprime ("Valor abaixo 100")
+
+entrada ("Valor PVP: ",a)
+
+produto(a)

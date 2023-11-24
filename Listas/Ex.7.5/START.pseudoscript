@@ -1,0 +1,18 @@
+# Substitua todas as ocorrências de uma letra por outra numa string.
+
+funcao substituir(string, letra, subst)
+    novostring = []
+    por cada i em string[i]:
+        se string[i] == letra:
+            novostring.adiciona(subst)
+        senao:
+            novostring.adiciona(string[i])
+    retorna novostring
+
+entrada("Indique uma frase de exemplo: ", frase)
+
+entrada("Indique uma letra que pretende substituir por outra: ", letra)
+
+entrada("Indique a nova letra a colocar no local de '{letra}'", a)
+
+imprime(substituir(frase, letra, a))
